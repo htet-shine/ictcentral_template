@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+	  <!-- Fonts -->
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/all.min.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <title>PC Shop Template</title>
+</head>
+<body>
+			
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container text-uppercase">
+	  	<a class="navbar-brand d-flex" href="#">
+	  		<img src="images/logo.png" class="logo" alt="logo">
+	  		<p class="my-auto ml-2">PC Shop</p>
+	  	</a>
+
+	  	<div class="collapse navbar-collapse order-3 order-lg-2" id="navbarSupportedContent">
+	  	  <ul class="navbar-nav mr-auto">
+	  	    <li class="nav-item">
+	  	    	<a href="index.html" class="nav-link">Home</a>
+	  	    </li>
+	  	    <li class="nav-item">
+	  	    	<a href="products.html" class="nav-link">Products</a>
+	  	    </li>
+	  	    <li class="nav-item">
+	  	    	<a href="contact.html" class="nav-link">Contact</a>
+	  	    </li>
+	  	    <li class="nav-item">
+	  	    	<a href="about.html" class="nav-link">About</a>
+	  	    </li>
+	  	  </ul>
+	  	  <ul class="navbar-nav ml-auto">
+	  	  	<li class="nav-item">
+	  	  		<a href="login.html" class="nav-link">Login</a>
+	  	  	</li>
+	  	  	<li class="nav-item">
+	  	  		<a href="register.html" class="nav-link">Register</a>
+	  	  	</li>
+	  	  </ul>
+	  	</div>
+
+	  	<div class="d-flex flex-row order-2 order-lg-3">
+	  		<ul class="navbar-nav flex-row">
+	  			<li class="nav-item d-flex pr-3 ">
+	  				<a href="cart.html" class="nav-link">Cart</a>
+	  				<span class="badge badge-custom my-auto">1</span>
+	  			</li>
+	  		</ul>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+	  		  <span class="navbar-toggler-icon"></span>
+	  		</button>
+	  	</div>
+
+	  </div>
+	</nav>
+		
+	<section class="cart my-5">
+		<div class="container">
+			<div class="product-section-heading cart-custom-heading">
+				<h1>2 item(s) in shopping cart</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-12 mb-3">
+							<div class="cart-container d-md-flex justify-content-between text-left">
+								<img src="images/surface_b_1.png" alt="surface_b_1">
+								<div class="cart-item-info">
+									<p>Microsoft Surface Pro</p>
+									<p>Core i7, 8GB, 512GB </p>
+								</div>
+								<select name="" class="form-control-sm mb-3">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">3</option>
+								</select>
+								<p>$1099.00</p>
+								<div class="cart-action mb-3">
+									<a href="#">Remove</a>
+									<a href="#">Save for later</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mb-3">
+							<div class="cart-container d-md-flex justify-content-between text-left">
+								<img src="images/surface_b_1.png" alt="surface_b_1">
+								<div class="cart-item-info">
+									<p>Microsoft Surface Pro</p>
+									<p>Core i7, 8GB, 512GB </p>
+								</div>
+								<select name="" class="form-control-sm mb-3">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">3</option>
+								</select>
+								<p>$1099.00</p>
+								<div class="cart-action mb-3">
+									<a href="#">Remove</a>
+									<a href="#">Save for later</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="coupon mb-3">
+						<p>Add your coupon code here...</p>
+						<form action="#" class="d-flex">
+							<input type="text" class="form-control form-control-sm mr-2">
+							<button type="submit" class="btn btn-sm btn-dark">Add</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="cart-summary text-right">
+						<h1 class="text-center">Cart Summary</h1>
+						<div class="balance-info m-3">
+							<p>Subtotal: <span>$1099.00</span></p>
+							<p>Discount: <span>$99.00</span></p>
+							<p>Total: <span>$1000.00</span></p>
+							<a class="button" href="products.html">Continue Shopping</a>
+							<a href="checkout.html" class="button btn-checkout">Checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="related-product">
+		<div class="container">
+			<h1 class="mb-4">You may also like...</h1>
+			<div class="row">
+				<div class="col-6 col-md-4 col-lg-3">
+					<a href="{{ url('product') }}">
+						<img src="images/surface_b_1.png" alt="">
+						<h1>Microsoft Surface Laptop</h1>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg-3">
+					<a href="{{ url('product') }}">
+						<img src="images/surface_b_1.png" alt="">
+						<h1>Microsoft Surface Laptop</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row p-3">
+				<div class="col-md-12 col-lg-4">
+					<div class="footer-content-heading">
+						<h1>FAQs</h1>
+					</div>
+					<div class="footer-content-body">
+						<p>Blah Blah Blah?</p>
+						<p>Blah Blah Blah?</p>
+						<p>Blah Blah Blah?</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-4">
+					<div class="footer-content-heading">
+						<h1>Find Us on Social Media</h1>
+					</div>
+					<div class="footer-content-body">
+						<div class="d-flex">
+							<i class="fab fa-facebook"></i>
+							<p>Facebook</p>
+						</div>
+						<div class="d-flex">
+							<i class="fab fa-twitter"></i>
+							<p>Twitter</p>
+						</div>
+						<div class="d-flex">
+							<i class="fab fa-youtube"></i>
+							<p>Youtube</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-4">
+					<div class="footer-content-heading">
+						<h1>Shipping Policies</h1>
+					</div>
+					<div class="footer-content-body">
+						<p>Blah Blah Blah</p>
+						<p>Blah Blah Blah</p>
+						<p>Blah Blah Blah</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-foot text-center">
+			<p>&copy; 2019 All rights reserved</p>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
